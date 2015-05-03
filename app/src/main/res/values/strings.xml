@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Second_sample</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title">バンクーバー検定</string>
+    <string name="info">This app is.....etc. blah blah blah blah blah blah blah blah blah blah</string>
+    <string name="start">Start!</string>
     <string name="action_settings">Settings</string>
 </resources>
