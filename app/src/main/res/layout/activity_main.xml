@@ -8,67 +8,71 @@
 
     <TextView android:text="@string/title" android:layout_width="@dimen/dialog_fixed_width_major"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
-        android:textSize="40sp"
-        android:id="@+id/title"
+        android:layout_marginTop="69dp"
+        android:textSize="35sp"
+        android:id="@+id/titleText"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="@dimen/dialog_fixed_width_major"
-        android:layout_height="125dp"
-        android:text="@string/start"
-        android:id="@+id/button"
-        android:textSize="50sp"
-        android:textStyle="normal"
-        android:textColor="#fffffefc"
-        android:background="#ff8feaff"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="@dimen/dialog_fixed_width_major"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/subtitle"
-        android:id="@+id/info"
-        android:textSize="14sp"
-        android:layout_below="@+id/title"
-        android:layout_alignLeft="@+id/title"
-        android:layout_alignStart="@+id/title"
+        android:id="@+id/infoText"
+        android:textSize="12.5sp"
         android:autoText="false"
-        android:elegantTextHeight="false" />
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/titleText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/num_quiz"
-        android:id="@+id/textView"
-        android:layout_below="@+id/info"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:id="@+id/totQText"
+        android:layout_below="@+id/infoText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/warningImage"
+        android:src="@drawable/warning"
+        android:contentDescription="@string/warningDescription"
+        android:layout_alignTop="@+id/warningText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/info"
-        android:id="@+id/textView2"
+        android:id="@+id/warningText"
         android:textSize="14sp"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_toRightOf="@+id/warningImage"
+        android:layout_toEndOf="@+id/warningImage" />
 
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/warning"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+    <Button
+        android:layout_width="@dimen/dialog_fixed_width_major"
+        android:layout_height="125dp"
+        android:text="@string/start"
+        android:id="@+id/startButton"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        android:textColor="#fffffefc"
+        android:background="#ff8feaff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp" />
 
 </RelativeLayout>
