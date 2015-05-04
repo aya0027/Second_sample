@@ -2,7 +2,9 @@
     <string name="app_name">Second_sample</string>
 
     <string name="title">バンクーバー検定</string>
-    <string name="info">This app is.....etc. blah blah blah blah blah blah blah blah blah blah</string>
+    <string name="subtitle">貴方のバンクーバー博識度を測ってみませんか？</string>
+    <string name="info">これはあくまでも軽い診断なので貴方の実際の博識度を正確に反映しないことがあります</string>
+    <string name="num_quiz">（全15問）</string>
     <string name="start">Start!</string>
     <string name="action_settings">Settings</string>
 </resources>
